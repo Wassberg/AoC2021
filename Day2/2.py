@@ -1,5 +1,5 @@
-# f = open("Day2/testInput.txt", "r")
-f = open("Day2/input.txt", "r")
+f = open("Day2/testInput.txt", "r")
+# f = open("Day2/input.txt", "r")
 lines = f.read().splitlines()
 
 p_horizontal = 0
