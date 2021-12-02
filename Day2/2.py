@@ -1,6 +1,6 @@
-f = open("Day2/testInput.txt", "r")
-# f = open("Day2/input.txt", "r")
-lines = f.read().splitlines()
+with open("Day2/testInput.txt", "r") as file:
+# with open("Day2/input.txt", "r") as file:
+    lines = file.read().splitlines()
 
 p_horizontal = 0
 p_vertical = 0
