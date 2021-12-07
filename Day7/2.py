@@ -14,7 +14,7 @@ for h in range(h_min, h_max):
     used_fuel = 0
     for crab_h, count in counter.items():
         h_diff = abs(crab_h - h)
-        used_fuel += ((pow(h_diff, 2) + h_diff)/2) * count # (n^2 - n)/2
+        used_fuel += ((pow(h_diff, 2) + h_diff)/2) * count # (n^2 + n)/2
     fuel_list.append(int(used_fuel))
 
 print(min(fuel_list))
