@@ -1,7 +1,5 @@
-import statistics
-
-with open('Day10/testInput.txt', 'r') as file:
-# with open('Day10/input.txt', 'r') as file:
+#with open('Day10/testInput.txt', 'r') as file:
+with open('Day10/input.txt', 'r') as file:
     lines = file.read().splitlines()
 
 c_opens = ['(','[','{','<']
@@ -45,4 +43,4 @@ for closing in c_closings:
         line_total = line_total*5 + c_points[char]
     totals.append(line_total)
 
-print(statistics.median(totals))
+print(sorted(totals)[len(totals)//2])
