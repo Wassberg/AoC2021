@@ -4,7 +4,6 @@ with open('Day13/testInput.txt', 'r') as file:
 
 dots = []
 folds = []
-
 for line in lines:
     if ',' in line:
         x, y = line.split(',')
@@ -28,8 +27,8 @@ for dot in dots:
     if dot['x'] > x_max: x_max = dot['x']
     if dot['y'] > y_max: y_max = dot['y']
 
-for y in range(y_max+1):
-    line = "".ljust(x_max, ' ')
+for y in range(y_max + 1):
+    line = "".ljust(x_max)
     for dot in dots:
         if dot['y'] == y: line = line[:dot['x']] + '█' + line[dot['x'] + 1:]
     print(line)
